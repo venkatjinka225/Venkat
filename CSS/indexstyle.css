@@ -1,0 +1,497 @@
+body{
+    background-color: black;
+    font-style: italic;
+    font-family: cursive;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.header{
+    height: 650px;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 1341px;
+}
+#headerleft{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+#headercdown{
+    position: absolute;
+    top: 56%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+#navimg{
+    height: 600px;
+    z-index: -1;
+    position: fixed;
+}
+.scroll-down{
+    border: 3px solid greenyellow;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: beige;
+    width: 120px;
+    text-align: left;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    float: right;
+    padding-right: 6pt;
+}
+.scroll-down a{
+    text-decoration: none;
+    color: black;
+}
+.scroll-down ul{
+    list-style-type: none;
+}
+.scroll-down a:hover{
+    color: blue;
+}
+.main{
+    background-color: black;
+}
+.main li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.NavBar{
+    border: 3px solid greenyellow;
+    border-radius: 8px;
+    background-color: beige;
+    float: right;
+    padding-right: 3pt;
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+}
+.NavBar a{
+    color: black;
+    text-decoration: none;
+    padding-left: 0%;
+}
+.NavBar ul{
+    list-style-type: none;
+}
+.NavBar a:hover{
+    color: blue;
+}
+#Profile{
+    background-color: aliceblue;
+    color: black;
+    height: 760px;
+    width: auto;
+}
+#Profile .AProfile{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.ProfileData{
+    display: grid;
+    text-align: center;
+    grid-template-areas: 'top'
+    'bottom'
+    'asd';
+}
+.PDHeading{
+    grid-row: top;
+    display: grid;
+    grid-template-areas: 'ap  bp cp';
+}
+.PDHP1{
+    grid-area: ap;
+    width: 75px;
+}
+.PDHmain{
+    grid-area: bp;
+}
+.PDHP2{
+    grid-area: cp;
+    width: 75px;
+}
+.Pgrid{
+    
+    display: grid;
+    grid-area: bottom;
+    grid-template-areas: 'a left main right b' ;
+    grid-template-columns: 1fr;
+}
+.ProfileImgOut{
+    width:250px;
+    height: 250px;
+    grid-area: main;
+}
+.PAboutMe{
+    padding-right: 20px;
+    width: 400px;
+    grid-area: left;
+}
+.PAboutMe1{
+    width: 400px;
+    grid-area: right;
+}
+.PAboutMe1 h4{
+    text-align: left;
+}
+.ProfileImg{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.Padding1{
+    width: 75px;
+    grid-area: a;
+}
+.Padding2{
+    width: 75px;
+    grid-area: b;
+}
+.SocialHandles{
+    grid-area: asd;
+    display: grid;
+    grid-template-areas: 'as bs cs';
+}
+.SHP1{
+    grid-area: as;
+    width: 300px;
+}
+.SHP2{
+    grid-area: cs;
+    width: 300px;
+}
+.SHData{
+    border: 2px solid black;
+    border-radius: 20pt;
+    grid-area: bs;
+    width: 700px;
+    display: grid;
+    grid-template-areas: 'li in';
+}
+.SHData li{
+    list-style-type: none;
+    padding: 0px;
+}
+.LinkedIn{
+    grid-area: li;
+}
+.Skype{
+    grid-area: sk;
+}
+.Github{
+    grid-area: gh;
+}
+.Instagram{
+    grid-area: in;
+}
+#Experience{
+    background-color: aqua;
+    color: black;
+    height: auto;
+    width: auto;
+}
+#Experience .AExperience{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.Egrid{
+    display: grid;
+    grid-template-areas: 'ae be ce';
+}
+.E1{
+    grid-area: ae;
+    width: 300px;
+    text-align: left;
+}
+.E2{
+    grid-area: be;
+    width: 600px;
+    display: grid;
+    grid-template-areas: 
+    'exp'
+    'edu'
+    'int'
+    'ach';
+}
+.Education{
+    grid-area: edu;
+}
+.Internship{
+    grid-area: int;
+}
+.Achievement{
+    grid-area: ach;
+}
+.Exp{
+    grid-area: exp;
+}
+.EDU1{
+    grid-area: edu1;
+    display: grid;
+    grid-template-areas: 'edu11 edu12';
+}
+.EDU11{
+    grid-area: edu11;
+}
+.EDU12{
+    padding-top: 30px;
+    grid-area: edu12;
+    background-color: aqua;
+}
+.EDU2{
+    grid-area: edu2;
+}
+.EDU3{
+    grid-area: edu3;
+}
+.E3{
+    grid-area: ce;
+    width: 300px;
+}
+#Abilites{
+    color: black;
+    background-color: darkseagreen;
+    height: auto;
+    width: auto;
+}
+#Abilites .AAbilites{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.Agrid{
+    display: grid;
+    grid-template-areas: 'aa ba ca';
+}
+.APadding1{
+    grid-area: aa;
+}
+.AMain{
+    grid-area: ba;
+    display: grid;
+    grid-template-areas: 'top'
+    'bottom';
+}
+.AMHeading{
+    grid-area: top;
+    text-align: center;
+}
+.AMData{
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas: 'ada'
+    'adb'
+    'adc';
+}
+.AMData1{
+    grid-area: ada;
+}
+.AMData2{
+    grid-area: adb;
+}
+.AMData3{
+    grid-area: adc;
+}
+.APadding2{
+    grid-area: ca;
+}
+#lang sub{
+    font-size: small;
+}
+#Projects{
+    color: black;
+    background-color: rgb(178, 250, 71);
+    height: auto;
+    width: auto;
+}
+#Projects .AProjects{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.PRgrid{
+    display: grid;
+    grid-template-areas: 'apr bpr cpr';
+}
+.PRPadding1{
+    grid-area: apr;
+    width: 300px;
+}
+.PRmain{
+    grid-area: bpr;
+    display: grid;
+    grid-template-areas: 'a top b'
+    'a bottom b';
+}
+.PRMHeading{
+    grid-area: top;
+    text-align: center;
+    width: 600px;
+}
+.PRMData{
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas: 'd1'
+    'd2'
+    'd3';
+}
+.PRMD1{
+    grid-area: d1;
+    height: 250px;
+}
+.PRMD2{
+    grid-area: d2;
+    height: 250px;
+}
+.PRMD3{
+    grid-area: d3;
+    height: 250px;
+}
+.PRPadding2{
+    grid-area: cpr;
+    width: 300px;
+}
+#Hobbies{
+    color: black;
+    background-color: rgb(247, 135, 94);
+    height: 700px;
+    width: auto;
+}
+#Hobbies .AHobbies{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.Hgrid{
+    display: grid;
+    grid-template-areas: 'apr bpr cpr';
+}
+.HPadding1{
+    grid-area: apr;
+    width: 300px;
+}
+.Hmain{
+    grid-area: bpr;
+    display: grid;
+    grid-template-areas: 'a top b'
+    'a bottom b';
+}
+.HMHeading{
+    grid-area: top;
+    text-align: center;
+    width: 600px;
+}
+.HMData{
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas: 'hm1 hm2 hm3';
+}
+.HMData1{
+    grid-area: hm1;
+}
+.HMData li{
+    list-style-type: none;  
+    text-align: center; 
+}
+.HMData2{
+    grid-area: hm2;
+}
+.HMData3{
+    grid-area: hm3;
+}
+.HPadding2{
+    grid-area: cpr;
+    width: 300px;
+}
+#Intrests{
+    color: black;
+    background-color: rgb(120, 163, 245);
+    height: auto;
+    width: auto;
+}
+#Intrests .AIntrests{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.Igrid{
+    display: grid;
+    grid-template-areas: 'ag bg cg';
+}
+.IPadding1{
+    grid-area: ag;
+    width: 300px;
+}
+.Imain{
+    grid-area: bg;
+    display: grid;
+    width: 600px;
+    grid-template-areas: 'a top b'
+    'a bottom b';
+}
+.IMHeading{
+    grid-area: top;
+    text-align: center;
+    width: 600px;
+}
+.IMData{
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas: 'im1 im2';
+}
+.IMData1{
+    grid-area: im1;
+    width: 300px;
+}
+.IMData2{
+    grid-area: im2;
+}
+.IMData li{
+    list-style-type: none;
+    text-align: center;
+}
+.IPadding2{
+    grid-area: cg;
+    width: 300px;
+}
+.footer{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 'af bf cf';
+    color: white;
+}
+.foot1{
+    grid-area: af;
+    width: 300px;
+}
+.foot2{
+    grid-area: bf;
+    display: grid;
+    grid-template-areas: 'f1 f2';
+}
+.foot11{
+    grid-area: f1;
+    text-align: right;
+}
+.foot12{
+    text-align: left;
+    grid-area: f2;
+}
+.foot3{
+    grid-area: cf;
+    width: 300px;
+}
